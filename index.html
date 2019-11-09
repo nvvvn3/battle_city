@@ -12,16 +12,16 @@
         const {Loader} = GameEngine
 
         const loader = new Loader
-        loader.addImage('med','../static/med.jpg')
-        loader.addJson('persons','../static/persons.json')
+        loader.addImage('med','static/med.jpg')
+        loader.addJson('persons','static/persons.json')
         loader.load(() => {
             console.log('Image loader')
         })
 
-        // Loader.LoadImage('../static/med.jpg').then(image =>{
-        //     console.log(image)
-        //     document.body.append(image)
-        // })
+        Loader.LoadImage('static/med.jpg').then(image =>{
+            console.log(image)
+            document.body.append(image)
+        })
     </script>
 </body>
 </html>
